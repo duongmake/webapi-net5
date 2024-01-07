@@ -31,10 +31,12 @@ namespace MyWebApiApp
 
             services.AddControllers();
 
+            //Add
             services.AddDbContext<MyDbContext>(option =>
             {
                 option.UseSqlServer(Configuration.GetConnectionString("MyDB"));
             });
+
 
             services.AddSwaggerGen(c =>
             {
