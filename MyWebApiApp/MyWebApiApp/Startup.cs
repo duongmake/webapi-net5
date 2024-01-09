@@ -38,7 +38,7 @@ namespace MyWebApiApp
                 option.UseSqlServer(Configuration.GetConnectionString("MyDB"));
             });
 
-            services.AddScoped<ILoaiRepository, LoaiRepositoryInMemory>();
+            services.AddScoped<ILoaiRepository, LoaiRepository>();
 
 
             services.AddSwaggerGen(c =>

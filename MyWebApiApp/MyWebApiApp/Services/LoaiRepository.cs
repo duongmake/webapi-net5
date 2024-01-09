@@ -21,7 +21,7 @@ namespace MyWebApiApp.Services
             };
             _context.Add(loais);
             _context.SaveChanges();
-
+            
             return new LoaiVM
             {
                 MaLoai = loais.MaLoai,
