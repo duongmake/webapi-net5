@@ -46,6 +46,7 @@ namespace MyWebApiApp.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult CreateNew(LoaiModel model)
         {
             try
